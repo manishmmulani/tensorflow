@@ -21,4 +21,17 @@ git clone https://github.com/PAIR-code/facets.git
 jupyter nbextensions install facets-dist/ --user
 
 
+# No module named 'error'
+
+tensorflow> jupyter --paths
+you will see that in /usr/local/share/jupyter/kernels/ directory contains only python2
+
+Hence to install ipykernel for python3, run the following commands
+
+
+sudo /home/mulani/installations/anaconda3/bin/python -m pip install ipykernel
+sudo /home/mulani/installations/anaconda3/bin/python -m ipykernel install
+
+(Ref https://github.com/jupyter/notebook/issues/1524 for the above)
+
   
