@@ -36,4 +36,8 @@ sudo /home/mulani/installations/anaconda3/bin/python -m ipykernel install
 
 (Ref https://github.com/jupyter/notebook/issues/1524 for the above)
 
-  
+Also, had to fix the python path in jupyter kernel as below
+
+tensorflow>sudo vim /home/mulani/installations/anaconda3/share/jupyter/kernels/python3/kernel.json
+
+"/home/mulani/.conda/envs/tensorflow/bin/python"
